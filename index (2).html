@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Giới thiệu — [Đỗ Trọng Đức]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --muted:#64748b;
+      --accent:#6c5ce7;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.6);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;min-height:100vh;background:linear-gradient(180deg,var(--bg),#eef2ff);display:flex;align-items:center;justify-content:center;padding:32px;
+    }
+    .container{
+      width:100%;max-width:980px;background:linear-gradient(180deg,var(--card),#fbfdff);border-radius:18px;box-shadow:0 10px 30px rgba(20,20,50,0.08);overflow:hidden;display:grid;grid-template-columns:320px 1fr;
+    }
+    .sidebar{
+      padding:28px;background:linear-gradient(180deg, rgba(108,92,231,0.08), rgba(108,92,231,0.02));display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center
+    }
+    .avatar{
+      width:150px;height:150px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#a78bfa);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:32px;box-shadow:0 8px 20px rgba(108,92,231,0.18);
+    }
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .meta{display:flex;flex-direction:column;gap:8px;margin-top:8px;width:100%}
+    .meta .item{display:flex;justify-content:space-between;padding:8px 12px;background:rgba(255,255,255,0.6);border-radius:12px;font-size:14px}
+    .content{padding:28px 32px}
+    .section{margin-bottom:20px}
+    .section h2{margin:0 0 10px;font-size:16px}
+    .about{line-height:1.6;color:#25314a}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:8px 12px;border-radius:999px;background:linear-gradient(90deg,rgba(108,92,231,0.12),rgba(108,92,231,0.04));font-weight:600;font-size:13px}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    .contact-list a{display:inline-flex;gap:10px;align-items:center;padding:10px;border-radius:10px;text-decoration:none;color:var(--muted);background:rgba(15,23,42,0.02)}
+    .actions{display:flex;gap:12px;margin-top:6px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .btn--primary{background:var(--accent);color:white}
+    .btn--ghost{background:transparent;border:1px solid rgba(15,23,42,0.06)}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){
+      .container{grid-template-columns:1fr;max-width:720px}
+      .sidebar{flex-direction:row;align-items:center;padding:18px;gap:12px}
+      .meta{display:none}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <aside class="sidebar" aria-label="Thông tin chính">
+      <div class="avatar">AB</div>
+      <div>
+        <h1>[Đỗ Trọng Đức]</h1>
+        <p class="lead">[Sinh Viên năm 1]</p>
+      </div>
+
+      <div class="meta" aria-hidden="false">
+        <div class="item"><span>Địa chỉ</span><strong>Hồ Chí Minh, Việt Nam</strong></div>
+        <div class="item"><span>Tuổi</span><strong>18</strong></div>
+        <div class="item"><span>Ngôn ngữ</span><strong>Tiếng Việt, English</strong></div>
+      </div>
+
+      <div style="width:100%;margin-top:auto">
+        <div class="actions">
+          <button class="btn btn--primary">Tải CV</button>
+          <button class="btn btn--ghost">Liên hệ</button>
+        </div>
+        <footer>© <span id="year"></span> [Tên của bạn]</footer>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="section about">
+        <h2>Giới thiệu ngắn</h2>
+        <p>Xin chào! Tôi là <strong>[Đỗ Trọng Đức]]</strong>. Tôi đam mê <em>lập trình</em>, thiết kế giao diện và xây dựng trải nghiệm người dùng mượt mà. Hiện tại tôi đang làm học tập tại [Trường Đại Học Sư Phạm Kỹ Thuật]. Tôi thích học công nghệ mới, giải quyết vấn đề và hợp tác trong nhóm.</p>
+      </div>
+
+      <div class="section">
+        <h2>Kỹ năng chính</h2>
+        <div class="skills">
+          <div class="chip">HTML</div>
+          <div class="chip">CSS</div>
+          <div class="chip">JavaScript</div>
+          <div class="chip">Git</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Kinh nghiệm ngắn</h2>
+        <p class="muted">[2025 — Hiện tại] Thực tập tại Công ty F — tham gia xây dựng giao diện, tối ưu hiệu suất và hỗ trợ QA.</p>
+      </div>
+
+      <div class="section">
+        <h2>Liên hệ</h2>
+        <div class="contact-list">
+          <a href="mailto:email@domain.com">✉ dotrongduc888@Gmail.com</a>
+          <a href="#">Số Điện Thoại: 0785990725</a>
+        </div>
+      </div>
+
+      
+    </section>
+  </main>
+
+  <script>
+    // Tự động cập nhật năm
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Gợi ý: thay AB trong avatar bằng tên tắt của bạn. Thay các ô [Tên của bạn] bằng thông tin thật.
+  </script>
+</body>
+</html>
