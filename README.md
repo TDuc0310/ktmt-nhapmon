@@ -1,5 +1,11 @@
-# ktmt-nhapmon
- Dự án đầu tiên của tôi.
- Tôi tên là : Đỗ Trọng Đức  
- MSSV: 25119074
- Tôi là sinh viên năm nhất của trường Đại học Sư Phạm Kỹ Thuật Thành Phố Hồ Chí Minh
+# Personal Page
+
+Trang giới thiệu cá nhân viết bằng **HTML + CSS**.
+
+## Cách chạy
+Mở file `index.html` trong trình duyệt bất kỳ.
+
+## Commit mẫu
+- `feat`: thêm trang HTML cơ bản.
+- `fix`: sửa lỗi giao diện avatar.
+- `docs`: bổ sung README.
